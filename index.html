@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="controller.js" type="module"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;700&family=Roboto:wght@100;400;500;900&family=Work+Sans:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Forkify</title>
+  </head>
+  <body>
+    <div class="app">
+      <nav class="nav flex column">
+        <img src="img/logo.png" class="nav__logo" />
+
+        <form class="nav__search-container flex">
+          <input
+            type="text"
+            class="nav__search-input"
+            placeholder="Search..."
+          />
+          <button class="nav__search-btn">
+            <svg>
+              <use href="img/icons.svg#icon-search"></use>
+            </svg>
+          </button>
+        </form>
+
+        <div class="nav__options flex column">
+          <button class="nav__add-recipe-btn flex justify-center">
+            <svg>
+              <use href="img/icons.svg#icon-edit"></use>
+            </svg>
+            <span>Add Recipe</span>
+          </button>
+          <div class="nav__bookmarks-container flex column">
+            <button class="nav__bookmarks-btn flex justify-center">
+              <svg>
+                <use href="img/icons.svg#icon-bookmark"></use>
+              </svg>
+              <span>Bookmarks</span>
+            </button>
+
+            <div class="bookmarks flex column justify-center">
+              <!-- <a class="search-result flex">
+                <img src="img/pizza.jpg" class="search-result__img" />
+                <div class="search-result__data flex column">
+                  <span class="search-result__title">Pizza</span>
+                  <h3 class="search-result__publisher">Omkar Joshi</h3>
+                </div>
+              </a>
+
+              <a class="search-result flex">
+                <img src="img/pizza.jpg" class="search-result__img" />
+                <div class="search-result__data flex column">
+                  <span class="search-result__title">Pizza</span>
+                  <h3 class="search-result__publisher">Omkar Joshi</h3>
+                </div>
+              </a> -->
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <main class="main flex column">
+        <div class="searched-recipes flex column justify-center">
+          <div class="search-results flex column"></div>
+          <div class="search-results__pagination"></div>
+        </div>
+        <div class="recipe-container flex column justify-center"></div>
+      </main>
+
+      <!-- <div class="modal-window">
+        <button class="modal-window__close">&Cross;</button>
+        <form class="add-recipe-form">
+          <div class="form__column">
+            <h2 class="form__heading">Recipe Data</h2>
+            <label class="form__label">Title</label>
+            <input type="text" required name="title">
+            <Label class="form__label">URL</Label>
+            <input type="text" required name="sourceURL">
+            <label class="form__label">Image URL</label>
+            <input type="text" required name="imageURL">
+            <label class="form__label">Publisher</label>
+            <input type="text" required name="publisher">
+            <label class="form__label">Prep Time</label>
+            <input type="number" required name="cookingTime">
+            <label class="form__label">Servings</label>
+            <input type="number" required name="servings">
+          </div>
+
+          <div class="form__column">
+            <h2 class="form__heading">Ingredients</h2>
+            <label class="form__label">Ingredient 1</label>
+            <input type="text" placeholder="Format: 'Quantity, Unit, Description'" required name="ingredient-1">
+            <label class="form__label">Ingredient 2</label>
+            <input type="text" placeholder="Format: 'Quantity, Unit, Description'" name="ingredient-2">
+            <label class="form__label">Ingredient 3</label>
+            <input type="text" placeholder="Format: 'Quantity, Unit, Description'" name="ingredient-3">
+            <label class="form__label">Ingredient 4</label>
+            <input type="text" placeholder="Format: 'Quantity, Unit, Description'" name="ingredient-4">
+            <label class="form__label">Ingredient 5</label>
+            <input type="text" placeholder="Format: 'Quantity, Unit, Description'" name="ingredient-5">
+            <label class="form__label">Ingredient 6</label>
+            <input type="text" placeholder="Format: 'Quantity, Unit, Description'" name="ingredient-6">
+          </div>
+        </form>
+      </div> -->
+    </div>
+  </body>
+</html>
